@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import { TextInput, View, Text, Button } from "react-native";
 import ResultImc from "./ResultImc";
+import styles from "./style";
 
 export default function Form(){
 
@@ -30,7 +31,7 @@ const [textButton, setTextButton] = useState("Calcular");
 
     }
     return(
-    <View>
+    <View style={styles.formContext}>
         <View>
             <Text>Altura</Text>
             <TextInput 
